@@ -34,7 +34,7 @@ function checkSeason(month){
         return `The season for ${month} is ${seasons[1]}.`;   
     } else if (month in summer_months) {
         return `The season for ${month} is ${seasons[2]}.`;  
-    } else {
+    } else if (month in fall_months) {
         return `The season for ${month} is ${seasons[3]}.`;
     }
 
